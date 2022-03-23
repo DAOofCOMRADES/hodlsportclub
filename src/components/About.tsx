@@ -14,14 +14,14 @@ const About = () => {
     >
       <div className="flex flex-col items-center justify-center">
         <div>
-          <img src={logo} alt={companyName} className="w-16 h-16" />
+          <img src={logo} alt={companyName} className="w-32 h-32" />
         </div>
         <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-4 h-12">
           {sections.map((section, index) => (
             <a
               key={`${section.name}-${index}`}
               href={section.href}
-              className="hover:text-primary text-base cursor-pointer leading-4 text-gray-800 dark:text-gray-400 dark:hover:text-white"
+              className="hover:text-primary text-base cursor-pointer leading-4 text-white-800 light:text-white-400 light:hover:text-white"
             >
               {section.name}
             </a>
@@ -35,7 +35,7 @@ const About = () => {
             rel="noreferrer"
           >
             <svg
-              className="fill-current text-gray-800 dark:text-white hover:text-primary"
+              className="fill-current text-white-800 light:text-white hover:text-primary"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -45,19 +45,20 @@ const About = () => {
             </svg>
           </a>
           <a
-            aria-label="linkedin"
-            href={socialMedia.linkedin}
+            aria-label="youtube"
+            href={socialMedia.youtube}
             target="_blank"
             rel="noreferrer"
           >
             <svg
-              className="fill-current text-gray-800 dark:text-white hover:text-primary"
+              className="fill-current text-white-800 light:text-white hover:text-primary"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              x="0px"
+              y="0px"
               viewBox="0 0 24 24"
             >
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              <path d="M426.5,329.3c-3.4-12.6-13.3-22.5-25.9-25.9c-23-6.3-115.1-6.3-115.1-6.3s-92.1,0-115.1,6.1,c-12.4,3.4-22.5,13.6-25.9,26.2c-6.1,23-6.1,70.7-6.1,70.7s0,48,6.1,70.7c3.4,12.6,13.3,22.5,25.9,25.9,c23.3,6.3,115.1,6.3,115.1,6.3s92.1,0,115.1-6.1c12.6-3.4,22.5-13.3,25.9-25.9c6.1-23,6.1-70.7,6.1-70.7S432.8,352.3,426.5,329.3,L426.5,329.3z" />
+              <path d="M256.2,355.9v88.2l76.6-44.1L256.2,355.9z" />
             </svg>
           </a>
           <a
@@ -67,7 +68,7 @@ const About = () => {
             rel="noreferrer"
           >
             <svg
-              className="fill-current text-gray-800 dark:text-white hover:text-primary"
+              className="fill-current text-white-800 light:text-white hover:text-primary"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -78,10 +79,10 @@ const About = () => {
           </a>
         </div>
         <div className="flex items-center mt-6">
-          <p className="mt-6 text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-50">
+          <p className="mt-6 text-xs lg:text-sm leading-none text-red-900 light:text-red-50">
             &copy; {new Date().getFullYear()} designed by{' '}
-            <a href="https://github.com/issaafalkattan" rel="nofollow">
-              Issaaf Kattan
+            <a href="https://github.com/HodlSportClub" rel="nofollow">
+              Hodl Sport Club
             </a>
           </p>
         </div>

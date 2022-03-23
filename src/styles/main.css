@@ -2,11 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+     font-family: 'Bodoni Moda', serif;
+     src: url(/fonts/BodoniModa-VariableFont_opsz,wght.ttf) 
+  }
+}
+
 
 :root {
-  --color-primary: #ec4755;
-  --color-secondary: #a12c34;
-  --color-tertiaty: #99a0a3;
+  --color-primary: #db0925;
+  --color-secondary: #db0925;
+  --color-tertiaty: #ffffff;
 }
 
 a { 

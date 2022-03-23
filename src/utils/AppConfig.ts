@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: 'React landing page',
-  title: 'React landing page template 2021',
-  description: 'Production ready plug n play landing page!',
+  site_name: 'Hodl Sport Club',
+  title: 'Hodl Sport Club',
+  description: 'Production ready plug n play Hodl Sport Club!',
   locale: 'en',
 };

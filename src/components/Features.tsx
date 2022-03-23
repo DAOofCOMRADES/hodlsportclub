@@ -14,33 +14,33 @@ const Features = () => {
           >
             {title}
           </h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white-900 sm:text-4xl">
             {subtitle}
           </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          <p className="ml-10 max-w-2xl text-xl text-white-500 lg:mx-auto">
             {description}
           </p>
         </div>
 
         <div className="mt-10">
-          <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+          <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-4 md:gap-x-2 md:gap-y-8">
             {featuresList.map((feature) => (
               <div key={feature.name} className="relative">
                 <dt>
                   <div
-                    className={`absolute flex items-center justify-center h-12 w-12 rounded-md bg-background text-tertiary border-primary border-4`}
+                    className={`absolute flex items-center justify-center h-64 w-64 rounded-md transparent_background text-tertiary border-primary border-4`}
                   >
                     <img
-                      className={`inline-block h-6 w-6 rounded-full`}
+                      className="h-full w-full object-fill sm:h-full md:h-100 lg:w-full lg:h-full"
                       src={feature.icon}
                       alt={feature.name}
                     />
                   </div>
-                  <p className="ml-16 text-lg leading-6 font-medium text-gray-900">
+                  <p className="ml-16 text-lg leading-6 font-medium text-red-900">
                     {feature.name}
                   </p>
                 </dt>
-                <dd className="mt-2 ml-16 text-base text-gray-500">
+                <dd className="mt-2 ml-8 text-base text-red-500">
                   {feature.description}
                 </dd>
               </div>

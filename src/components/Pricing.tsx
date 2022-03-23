@@ -27,7 +27,7 @@ const Pricing = () => {
             className={`flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-background mt-4`}
           >
             <div
-              className={`flex-1 bg-background text-gray-600 rounded-t rounded-b-none overflow-hidden shadow`}
+              className={`flex-1 bg-background text-white-600 rounded-t rounded-b-none overflow-hidden shadow`}
             >
               <div className={`p-8 text-3xl font-bold text-center border-b-4`}>
                 {firstPlan?.name}
@@ -47,7 +47,7 @@ const Pricing = () => {
               className={`flex-none mt-auto bg-background rounded-b rounded-t-none overflow-hidden shadow p-6`}
             >
               <div
-                className={`w-full pt-6 text-3xl text-gray-600 font-bold text-center`}
+                className={`w-full pt-6 text-3xl text-white-600 font-bold text-center`}
               >
                 {firstPlan?.price}
                 <span className={`text-base`}> {firstPlan?.priceDetails}</span>
@@ -90,7 +90,7 @@ const Pricing = () => {
             className={`flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-primary mt-4`}
           >
             <div
-              className={`flex-1 bg-background text-gray-600 rounded-t rounded-b-none overflow-hidden shadow`}
+              className={`flex-1 bg-background text-white-600 rounded-t rounded-b-none overflow-hidden shadow`}
             >
               <div className={`p-8 text-3xl font-bold text-center border-b-4`}>
                 {thirdPlan?.name}
@@ -110,7 +110,7 @@ const Pricing = () => {
               className={`flex-none mt-auto bg-background rounded-b rounded-t-none overflow-hidden shadow p-6`}
             >
               <div
-                className={`w-full pt-6 text-3xl text-gray-600 font-bold text-center`}
+                className={`w-full pt-6 text-3xl text-white-600 font-bold text-center`}
               >
                 {thirdPlan?.price}
                 <span className={`text-base`}> {thirdPlan?.priceDetails}</span>
